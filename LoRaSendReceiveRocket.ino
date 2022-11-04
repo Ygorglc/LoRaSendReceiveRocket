@@ -48,7 +48,7 @@ void setupLoRa(){
   LoRa.setPins(SS, RST, DI00);
 
   //Inicializa o LoRa
-  if (!LoRa.begin(BAND, true)){
+  if (!LoRa.begin(BAND)){
     //Se não conseguiu inicializar, mostra uma mensagem no display
     display.clear();
     display.drawString(0, 0, "Erro ao inicializar o LoRa!");
